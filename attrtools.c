@@ -119,14 +119,14 @@ int main(int argc, char **argv) {
         // chattr +i
         new_ff = ff | ATTR_I;
         if (fsetflags(path, new_ff) != 0) {
-            fprintf(stderr, "Failed to chmod +i: %s\n", strerror(errno));
+            fprintf(stderr, "Failed to chattr +i: %s\n", strerror(errno));
         }
         break;
     case ATTR_UNPIN:
         // chattr -i
         new_ff = ff & ~ATTR_I;
         if (fsetflags(path, new_ff) != 0) {
-            fprintf(stderr, "Failed to chmod -i: %s\n", strerror(errno));
+            fprintf(stderr, "Failed to chattr -i: %s\n", strerror(errno));
         }
         break;
     }
