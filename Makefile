@@ -1,5 +1,3 @@
-CC=clang
-
 LIBE2_OUT=libe2.o
 ATTRTOOLS_OUT=attrtools
 
