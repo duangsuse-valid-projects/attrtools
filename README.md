@@ -10,35 +10,39 @@ Attrtools Usage:
   ./attrtools <path> ; Is Immutable?
 ```
 
-+ attrtools __+i__ _<path>_ to add 'immutable' flag for file
-+ attrtools __-i__ _<path>_ to remove 'immutable' flag for file
-+ attrtools _<path>_ to query file flags
++ attrtools __+i__ _\<path\>_ to add 'immutable' flag for file
++ attrtools __-i__ _\<path\>_ to remove 'immutable' flag for file
++ attrtools _\<path\>_ to query file flags
   
-## Example
+## Examples
 
 > sudo __./attrtools +i libe2.o__
 
-File: libe2.o
+`File: libe2.o`
 
 > __./attrtools libe2.o__
 
+```plain
 File: libe2.o
 16
 +i
 +a
+```
 
 > sudo __./attrtools -i libe2.o__
 
-File: libe2.o
+`File: libe2.o`
 
 > sudo __./attrtools +i libe2__
 
-Cannot stat: libe2: No such file or directory
+`Cannot stat: libe2: No such file or directory`
 
 > __./attrtools -i libe2.o__
 
+```plain
 File: libe2.o
 Failed to chmod -i: Operation not permitted
+```
 
 ## Exit code
 
