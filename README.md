@@ -41,7 +41,7 @@ File: libe2.o
 
 ```plain
 File: libe2.o
-Failed to chmod -i: Operation not permitted
+Failed to chattr -i: Operation not permitted
 ```
 
 ## Exit code
