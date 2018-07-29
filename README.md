@@ -55,3 +55,12 @@ Exit __2__ if __chattr/lsattr__ fails
 + __"informations"__ are printed to stdout
 + __"results"__ are printed to stderr
 + __"errors"__ are printed to stderr
+
+## NDK Compiling
+
+Execute this in project dir:
+
+```bash
+ndk-build NDK_PROJECT_PATH=`pwd` NDK_APPLICATION_MK=./Application.mk
+```
+
