@@ -49,3 +49,9 @@ Failed to chattr -i: Operation not permitted
 Exit __1__ if __command line/file stat__ fails
 
 Exit __2__ if __chattr__ fails
+
+## `stdout` or `stderr`
+
+__"informations"__ are printed to stdout
+__"results"__ are printed to stderr
+__"errors"__ are printed to stderr
