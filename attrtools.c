@@ -49,7 +49,11 @@ int main(int argc, char **argv) {
     if (argc == 3) {
         char *first_arg = argv[1];
         if (strlen(first_arg) != 2) {
+#if __WORDSIZE == 64
             fprintf(stderr, "Bad mode length: %lu\n", strlen(first_arg));
+#else
+            fprintf(stderr, "Bad mode length: %u\n", strlen(first_arg));
+#endif
             return 1;
         } else {
             // is unpin file

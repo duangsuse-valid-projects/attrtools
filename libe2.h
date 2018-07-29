@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <linux/ext2_fs.h>
+#include "e2defs.h"
 
 /* An ext2 filesystem file attribute processing library */
 
