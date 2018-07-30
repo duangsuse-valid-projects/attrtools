@@ -64,3 +64,6 @@ Execute this in project dir:
 ndk-build NDK_PROJECT_PATH=`pwd` NDK_APPLICATION_MK=./Application.mk
 ```
 
+## Android front-end
+
+https://github.com/duangsuse/ChangeAttr
